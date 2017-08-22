@@ -14,7 +14,8 @@
   },
   "files": [
     "index.js",
-    "express.js"
+    "express.js",
+    "hapi.js"
   ],
   "repository": {
     "type": "git",
