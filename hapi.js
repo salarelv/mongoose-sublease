@@ -40,7 +40,6 @@ const plugin = {
       request.app[_options.modelKey] = modelFunc;
       return reply.continue();
     });
-    next();
   }
 };
 
