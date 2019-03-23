@@ -4,7 +4,7 @@ const sublease = require('./')
 var channels = [];
 var models = {};
 const plugin = {
-  name: 'URLGenerator',
+  name: 'MongooseSublease',
   version: '1.0.0',
   register: async function (server, options) {
     _options = Object.assign({
