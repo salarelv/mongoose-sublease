@@ -12,7 +12,7 @@ const plugin = {
       tenantKey: 'tenant',
       modelKey: 'model',
       getDbName: (req, connection) => connection.name,
-    }, _options);
+    }, options);
 
     channels.push(_options);
 
