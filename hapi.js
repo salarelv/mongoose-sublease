@@ -5,9 +5,9 @@ var channels = [];
 var models = {};
 const plugin = {
   name: 'MongooseSublease',
-  version: '1.0.0',
+  version: '1.0.1',
   register: async function (server, options) {
-    _options = Object.assign({
+    var _options = Object.assign({
       connectionKey: 'connection',
       tenantKey: 'tenant',
       modelKey: 'model',
