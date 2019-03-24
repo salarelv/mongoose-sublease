@@ -39,6 +39,7 @@ const plugin = {
         request.app = {};
 
       request.app[_options.modelKey] = modelFunc;
+      return;
     });
   }
 };
