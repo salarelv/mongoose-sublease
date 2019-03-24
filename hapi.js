@@ -6,6 +6,7 @@ var models = {};
 const plugin = {
   name: 'MongooseSublease',
   version: '1.0.1',
+  multiple: true,
   register: async function (server, options) {
     var _options = Object.assign({
       connectionKey: 'connection',
