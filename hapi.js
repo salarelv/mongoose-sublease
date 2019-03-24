@@ -25,7 +25,7 @@ const plugin = {
       }
     }
 
-    server.ext("onPreAuth", function(request, reply) {
+    server.ext("onPreAuth", function(request, h) {
       function modelFunc(modelName, dbName) {
         var channel = channels[models[modelName]];
         var getTenant = sublease(channel.connection, channel.models);
@@ -39,7 +39,7 @@ const plugin = {
         request.app = {};
 
       request.app[_options.modelKey] = modelFunc;
-      return true;
+      return h.continue;
     });
   }
 };
